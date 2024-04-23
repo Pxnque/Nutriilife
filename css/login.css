@@ -1,0 +1,147 @@
+:root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --azul-logo: #003755;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: var(--azul-logo);
+}
+a:hover{
+    text-decoration: underline;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    height: 15vh;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url('/img/platillo2.jpg');
+    background-size: cover;
+}
+.left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left .info{
+    color: white;
+    text-align: center;
+    p{
+        font-weight: 400;
+    }
+}
+.right {
+    color: black;
+    text-align: center;
+    p{
+        margin: 1.5rem 0;
+        font-size: 0.875rem;
+    }
+}
+.right form{
+    width: 30vh;
+}
+.fields input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+}
+
+label{
+    text-align: left;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+.checkbox-container{
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 0 1.25rem 0;
+    padding-top: 0.5rem;
+}
+.checkbox-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox-container input:checked∼.checkmark{
+    background-color: var(--azul-logo);
+    border: 1px solid var(--azul-logo);
+}
+.checkmark{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    top: 4px;
+    left: 0;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox-container input:checked∼.checkmark:after{
+    display: block;
+}
+.checkbox-container .checkmark:after{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    width: 5px;
+    height: 10px;
+    left: 8px;
+    top: 4px;
+    transform: rotate(45deg);
+}
+.login-button{
+    display: block;
+    width: 100%;
+    background: var(--azul-logo);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.login-button:hover{
+    background: #2c4893;
+    cursor: pointer;
+}
+@media screen and (min-width: 900px){
+    .main-container{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left,.right {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}

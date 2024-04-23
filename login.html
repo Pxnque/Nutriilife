@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./css/login.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriiLife</title>
 </head>
-<header style="background-color: #003755;">
-    <div class="navbar">
-        <div class="logo">
-            <img src="/logo.png" height="80px" width="80px"/>
-        </div>
-        <ul class="links">
-            <li><a href="planes">Planes</a></li>
-            <li><a href="HT">Healthy tips </a></li>
-            <li><a href="Menu"> Menu</a></li>
-            <li><a href="Blog">Blog</a></li>
-        </ul>
-        <div class="botones">
-            <a href="#" class="action_btn" id="inicioS">INICIAR SESIÓN</a>
-            <a href="#" class="action_btn" id="inicioU">UNETE</a>
-        </div>
-    </div>
-</header>
     <body>
-        
+        <div class="main-container">
+            <div class="left">
+                <section class="info">
+                    <h1>Lo saludable y lo sabroso es algo grandioso</h1>
+                    <p>Explora ya nuestras nuevas opciones que tenemos para ti</p>
+                </section>
+            </div>
+            <div class="right">
+                <section class="titulo">
+                    
+                </section>
+                <section class="fields">
+                    <h1>Log in</h1>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email">
+                    <label for="password">Contraseña</label>
+                    <input id="password" name="password" type="password">
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Recordarme
+                    </label>
+                    <button class="login-button" type="submit">LOG IN</button>
+                </section>
+            </div>
+        </div>
     </body>
 </html>
