@@ -132,6 +132,11 @@ header{
     object-fit: cover;
 
 }
+.slider .list {
+    position: relative;
+    transition: left 0.5s ease-in; /* Transition for smooth animation */
+}
+
 .buttons-carousel{
     position: absolute;
     top: 45%;
