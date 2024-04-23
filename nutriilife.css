@@ -94,9 +94,10 @@ header{
 .div-carr{
     display: grid;
     grid-template-columns: repeat(2,42vw);
-    padding-top: 10vw;
+    padding-top: 5vw;
     padding-left: 5vw;
-    height: 42vh;
+    padding-bottom: 5vw;
+    height: 100%;
     grid-gap: 4vw;
 }
 .carrusel {
@@ -111,43 +112,44 @@ header{
 }
 .slider{
     width: 45vw;
-    max-width: 700px;
-    height: 700px;
+    
+    height: 42vh;
     margin: auto;
     position: relative;
 }
 .list{
     position: absolute;
-    top: 0;
+    top: 0; 
     left: 0;
-    height: 30vw;
+    height: 45vw;
     display: flex;  
-    width: 30vw;
+    width: 42vw;
 }
 
 .list img{
-    width: 30vw;
-    max-width: 40vw;
-    height: 30vw;
+    width: 45vw;
+    height: 42vh;
     object-fit: cover;
 
 }
 .buttons-carousel{
     position: absolute;
     top: 45%;
-    left: 5%;
-    width: 90%;
+    left: 0%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .buttons-carousel button{
-    width: 50px;
-    height: 50px;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50%;
-    background-color: #fff5;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.333);
+    border-color: rgba(145, 198, 245, 0);
+    color: rgba(255, 255, 255, 0.692);
     font-family: monospace;
     font-weight: bold;
+    font-size: x-large;
 }
 .dots{
     position: absolute;
@@ -164,7 +166,7 @@ header{
     list-style: none;
     width: 10px;
     height: 10px;
-    background-color: #fff;
+    background-color: #0b8649;
     margin: 20px;
     border-radius: 20px;
 }
