@@ -70,6 +70,13 @@ label{
     margin-bottom: 0.5rem;
     font-size: 0.75rem;
 }
+.checkbox-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
 .checkbox-container{
     display: block;
     position: relative;
@@ -79,14 +86,8 @@ label{
     margin: 0 0 1.25rem 0;
     padding-top: 0.5rem;
 }
-.checkbox-container input{
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-.checkbox-container input:checked∼.checkmark{
+
+.checkbox-container input:checked~.checkmark{
     background-color: var(--azul-logo);
     border: 1px solid var(--azul-logo);
 }
@@ -105,7 +106,7 @@ label{
     position: absolute;
     display: none;
 }
-.checkbox-container input:checked∼.checkmark:after{
+.checkbox-container input:checked~.checkmark:after{
     display: block;
 }
 .checkbox-container .checkmark:after{
