@@ -54,15 +54,18 @@ a:hover {
 }
 
 .right {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url('Fondo_Verduras.jpg');
     padding: 1rem; 
 }
-
+.right label{
+    align-items: left;
+}
 .right p {
     margin: 1.5rem 0;
     font-size: 1rem; 
+    text-align: left;
 }
 
 .right form {
