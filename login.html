@@ -6,33 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriiLife</title>
 </head>
-    <body>
-        <div class="main-container">
-            <div class="left">
-                <section class="info">
-                    <h1>Lo saludable y lo sabroso es algo grandioso</h1>
-                    <p>Explora ya nuestras nuevas opciones que tenemos para ti</p>
-                </section>
-            </div>
-            <div class="right">
-                
-                <section class="fields">
-                    <img src="/logo.png" alt="logo-arriba-login" width="150vw" height="150vh">
-                    <h1>Log in</h1>
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email">
-                    <label for="password">Contraseña</label>
-                    <input id="password" name="password" type="password">
-                    <label class="checkbox-container">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        Recordarme
-                    </label>
-                    <button class="login-button" type="submit">LOG IN</button>
-                    <p>¿Todavia no tienes una cuenta? <a href="register"><strong>Registrate aqui</strong></a></p>
-                </section>
-                
-            </div>
+<body>
+    <div class="main-container">
+        <div class="left">
+            <section class="info">
+                <h1>Lo saludable y lo sabroso es algo grandioso</h1>
+                <p>Explora ya nuestras nuevas opciones que tenemos para ti</p>
+            </section>
         </div>
-    </body>
+        <div class="right">
+            <form action="http://localhost:8081/login.php" method="post" class="fields">
+                <img src="/logo.png" alt="logo-arriba-login" width="150vw" height="150vh">
+                <h1>Log in</h1>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email">
+                <label for="password">Contraseña</label>
+                <input id="password" name="password" type="password">
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Recordarme
+                </label>
+                <button class="login-button" type="submit">LOG IN</button>
+                <p>¿Todavía no tienes una cuenta? <a href="register.php"><strong>Regístrate aquí</strong></a></p>
+            </form>
+        </div>
+    </div>
+</body>
 </html>
