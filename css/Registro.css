@@ -85,6 +85,10 @@ a:hover {
     margin-bottom: 0.75rem;
     font-size: 0.75rem;
 }
+.fields label{
+    text-align: left;
+    color: black;
+}
 
 label {
     text-align: left;
@@ -97,7 +101,7 @@ label {
     display: block;
     width: 100%;
     color: white;
-    background-color: #049800;
+    background-color: #046e00;
     font-weight: 700;
     border: none;
     padding: 0.75rem;
@@ -108,7 +112,7 @@ label {
 }
 
 .login-button:hover {
-    background: #2c4893;
+    background: #049800;
     cursor: pointer;
 }
 
@@ -142,10 +146,7 @@ form {
     padding: 0.75em;
     margin-bottom: 0.75rem;
     font-size: 0.75rem;
-    label{
-        color: black;
-        text-align: left;
-    }
+    
     
 }
 
