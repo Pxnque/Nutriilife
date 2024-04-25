@@ -24,7 +24,8 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 <!-- PROJECT LOGO -->
 <br />
@@ -77,15 +78,15 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
+## Acerca del proyecto
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![NutriiLife][product-screenshot]](https://github.com/Pxnque/Nutriilife)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Una pagina web acerca de la buena alimentación enfocada en la venta de planes alimenticios:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Built With
+### Construida con
 
 - [![HTML][Next.js]][Next-url]
 - [![CSS][React.js]][React-url]
@@ -182,7 +183,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 CONTACT -->
 
-## Contact
+## Contacto
 
 Pxnque - [@Pxnque](https://github.com/Pxnque) - panque08@outlook.es
 Darex dev - [@Duraknezz](https://github.com/Duraknezz) - panque08@outlook.es
@@ -205,18 +206,18 @@ Project Link: [https://github.com/Pxnque/Nutriilife](https://github.com/Pxnque/N
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
+[contributors-url]: https://github.com/Pxnque/Nutriilife/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
+[forks-url]: https://github.com/Pxnque/Nutriilife/network/members
 [stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
+[stars-url]: https://github.com/Pxnque/Nutriilife/stargazers
 [issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
+[issues-url]: https://github.com/Pxnque/Nutriilife/issues
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[license-url]: https://github.com/Pxnque/Nutriilife/blob/main
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: /logo.png
 [Next.js]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
 [Next-url]: https://developer.mozilla.org/es/docs/Web/HTML
 [React.js]: https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
