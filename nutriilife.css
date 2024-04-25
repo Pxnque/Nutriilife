@@ -7,13 +7,15 @@
 
 body{
     background-color: #f0f0f0
+    
 }
 
 .navbar{
     background-color: #003755;
     display: flex;
-    width: 100%;
-    height: 100px;
+    width: 95vw;
+    height: 10vh;
+    
     align-items: center;
     justify-content: space-between;
     
@@ -91,59 +93,68 @@ header{
 }
 .div-carr{
     display: grid;
-    grid-template-columns: repeat(2,800px);
-
-    grid-gap: 24px;
+    grid-template-columns: repeat(2,42vw);
+    padding-top: 5vw;
+    padding-left: 5vw;
+    padding-bottom: 5vw;
+    height: 100%;
+    grid-gap: 4vw;
 }
 .carrusel {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    max-width: 700px; 
+    width: 45vw; 
     margin: 0 auto;
     overflow: hidden;
-    padding-top: 20px;
+    height: 42vh;
 
 }
 .slider{
-    width: 700px;
-    max-width: 700px;
-    height: 700px;
+    width: 45vw;
+    
+    height: 42vh;
     margin: auto;
     position: relative;
 }
 .list{
     position: absolute;
-    top: 0;
+    top: 0; 
     left: 0;
-    height: 100%;
+    height: 45vw;
     display: flex;  
-    width: max-content;
+    width: 42vw;
 }
 
 .list img{
-    width: 700px;
-    max-width: 700px;
-    height: 100%;
+    width: 45vw;
+    height: 42vh;
     object-fit: cover;
 
 }
+.slider .list {
+    position: relative;
+    transition: left 0.5s ease-in; /* Transition for smooth animation */
+}
+
 .buttons-carousel{
     position: absolute;
     top: 45%;
-    left: 5%;
-    width: 90%;
+    left: 0%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .buttons-carousel button{
-    width: 50px;
-    height: 50px;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50%;
-    background-color: #fff5;
-    color: white;
+    background-color: rgba(255, 255, 255, 0.333);
+    border-color: rgba(145, 198, 245, 0);
+    color: rgba(255, 255, 255, 0.692);
     font-family: monospace;
     font-weight: bold;
+    font-size: x-large;
 }
 .dots{
     position: absolute;
@@ -160,7 +171,7 @@ header{
     list-style: none;
     width: 10px;
     height: 10px;
-    background-color: #fff;
+    background-color: #0b8649;
     margin: 20px;
     border-radius: 20px;
 }
@@ -217,7 +228,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-column-gap: 24px;
-    width: 1200px;
+    width: 95vw;
     padding-top: 12px;
     justify-content: space-between;
     margin: 0 auto;
