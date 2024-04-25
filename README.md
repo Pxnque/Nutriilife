@@ -186,7 +186,8 @@ CONTACT -->
 ## Contacto
 
 Pxnque - [@Pxnque](https://github.com/Pxnque) - panque08@outlook.es
-Darex dev - [@Duraknezz](https://github.com/Duraknezz) - panque08@outlook.es
+<br>
+Darex dev - [@Duraknezz](https://github.com/Duraknezz) - alvaradoortizalejandrodario@gmail.com
 
 Project Link: [https://github.com/Pxnque/Nutriilife](https://github.com/Pxnque/Nutriilife)
 
@@ -194,13 +195,13 @@ Project Link: [https://github.com/Pxnque/Nutriilife](https://github.com/Pxnque/N
 
 <!-- ACKNOWLEDGMENTS -->
 
-## Acknowledgments
+<!-- ## Acknowledgments
 
 - []()
 - []()
 - []()
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
