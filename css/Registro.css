@@ -1,0 +1,152 @@
+:root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --azul-logo: #003755;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--azul-logo);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    height: 15vh;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url('verduras.jpg');
+    background-size: cover;
+    color:#c4c4c4;
+}
+
+.left, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .info {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.left .info p {
+    font-weight: 400;
+}
+
+.right {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url('Fondo_Verduras.jpg');
+    padding: 1rem; 
+}
+.right form label{
+    align-items: left;
+}
+.right p {
+    margin: 1.5rem 0;
+    font-size: 1rem; 
+    text-align: left;
+}
+
+.right form {
+    width: 30vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fields input {
+    width: 50vh;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #c4c4c4;
+    padding: 0.75em;
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+}
+.fields label{
+    text-align: left;
+    color: black;
+}
+
+label {
+    text-align: left;
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+}
+
+.login-button {
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: #046e00;
+    font-weight: 700;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.login-button:hover {
+    background: #049800;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+    .main-container {
+        flex-direction: row;
+        height: 100vh;
+    }
+    
+    .left, .right {
+        display: flex;
+        width: 50%;
+        height: auto; 
+    }
+    
+    .right {
+        padding: 4rem;
+    }
+    
+    .right p {
+        max-width: 80%; 
+        margin: auto; 
+    }
+}
+
+form {
+    color:#003755;
+    width: 50vh;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 0.75em;
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+    
+    
+}
+
