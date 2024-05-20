@@ -24,10 +24,7 @@ $result_check = pg_query($conn, $sql_check);
 
 if (pg_num_rows($result_check) > 0) {
     // Usuario ya está suscrito
-    echo "<script>
-            alert('Ya está suscrito a un plan.');
-            window.location.href = '../Planes.html';
-          </script>";
+    echo "Ya está suscrito a un plan.";
 } else {
     // Insertar nueva suscripción
     $sql = "INSERT INTO suscripciones (usuario_id, plan_nombre, costo_mensual, fecha_suscripcion) 
@@ -35,15 +32,9 @@ if (pg_num_rows($result_check) > 0) {
     $result = pg_query($conn, $sql);
 
     if ($result) {
-        echo "<script>
-                alert('Suscripción realizada con éxito.');
-                window.location.href = '../LandingPage.html';
-              </script>";
+        echo "Suscripción realizada con éxito.";
     } else {
-        echo "<script>
-                alert('Error al realizar la suscripción.');
-                window.location.href = '../Planes.html';
-              </script>";
+        echo "Error al realizar la suscripción.";
     }
 }
 

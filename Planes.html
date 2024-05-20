@@ -123,8 +123,16 @@
                 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
                 xhr.onreadystatechange = function() {
                     if (xhr.readyState === 4 && xhr.status === 200) {
-                        alert(xhr.responseText);
-                        window.location.href = 'LandingPage.html';
+                        if (xhr.responseText === "Ya está suscrito a un plan.") {
+                            alert(xhr.responseText);
+                            window.location.href = 'Planes.html';
+                        } else if (xhr.responseText === "Suscripción realizada con éxito.") {
+                            alert(xhr.responseText);
+                            localStorage.setItem('plan_nombre', planNombre);
+                            window.location.href = 'LandingPage.html';
+                        } else {
+                            alert(xhr.responseText);
+                        }
                     }
                 };
                 xhr.send('usuario_id=' + usuario_id + '&plan_nombre=' + planNombre + '&plan_costo=' + planCosto);
