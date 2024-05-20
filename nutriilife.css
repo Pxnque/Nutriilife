@@ -324,3 +324,92 @@ footer{
     font-size: 1.5rem;
     border-radius: 5px;
 }
+
+.platillos{
+    font-family: "HelveticaNeue";
+}
+.platillos #titulos-planes{
+    font-size: 22px;
+    margin: 40px 0 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+    padding-left: 18.5vw;
+}
+.platillos-container{
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    -webkit-column-gap: 16px;
+    column-gap: 16px
+}
+.platillo-box{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0 16px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    img{
+        height: 27.5vh;
+        width: 27.5vh;
+    }
+}
+@media (max-width: 768px) {
+    .platillos-container {
+        overflow:hidden
+    }
+}
+
+@media (min-width: 768px) {
+    .platillos-container {
+        width:750px
+    }
+}
+
+@media (min-width: 962px) {
+    .platillos-container {
+        width:940px
+    }
+}
+
+@media (min-width: 1200px) {
+    .platillos-container {
+        width:1170px
+    }
+}
+.platillo-detalles{
+    margin-top: 16px;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.38;
+    color: #303236;
+    a{
+        text-decoration: none;
+        color: #0f346c;
+    }
+    p{
+        font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+        font-size: 15px;
+        color: #6a6d75;
+        line-height: 18px;
+        text-align: justify;
+    }
+    span{
+        margin-top: 15px;
+        font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+        font-size: 16px;
+        color: #303236;
+    }
+}
