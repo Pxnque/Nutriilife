@@ -383,32 +383,66 @@ footer {
     margin-bottom: 10px;
 }
 
-.plan button {
+/*.plan button {
     padding: 10px 20px;
-    background-color: #4CAF50; /* Verde vivo */
+    background-color: #4CAF50; 
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: auto; /* Mantener el botón en la parte inferior */
+    margin-top: auto; 
 }
+
+
+
+/* CSS */
+.plan button{
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #00D775, #00BD68);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+}
+
 
 .plan button:hover {
     background-color: #45a049; /* Verde oscuro al pasar el ratón */
 }
 
 #bronze {
-    background-color: #cd7f32; /* Bronce */
+    background: rgb(179,110,43);
+    background: linear-gradient(54deg, rgb(158, 98, 37) 0%, rgba(227,145,63,1) 50%, rgba(241,171,102,1) 100%);/* Bronce */
 }
 
 #silver {
-    background-color: #c0c0c0; /* Plata */
+background: rgb(134,134,134);
+background: linear-gradient(54deg, rgba(134,134,134,1) 0%, rgba(214,212,212,1) 50%, rgba(235,235,235,1) 100%);/* Plata */
 }
 
 #gold {
-    background-color: #ffd700; /* Oro */
+    background: rgb(215,158,12);
+background: linear-gradient(54deg, rgba(215,158,12,1) 0%, rgba(255,215,0,1) 51%, rgba(255,234,118,1) 100%);/* Oro */
 }
 
 .navbar-inferior {

@@ -324,18 +324,33 @@ footer{
     font-size: 1.5rem;
     border-radius: 5px;
 }
+.main-titulo{
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #000000;
+    padding-top: 28px;
+    text-align: center;
+}
 
 .platillos{
     font-family: "HelveticaNeue";
 }
-.platillos #titulos-planes{
+.titulos-planes{
     font-size: 22px;
     margin: 40px 0 24px;
     font-weight: 600;
     line-height: 1.2;
     font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     color: #303236;
-    padding-left: 18.5vw;
+    padding-left: 5%;
+}
+.titulos-planes #starter{
+    color: #CD7F32;
+}
+.titulos-planes #advanced{
+    color: #c0c0c0;
+}
+.titulos-planes #premium{
+    color: #ffd700;
 }
 .platillos-container{
     margin-right: auto;
@@ -361,8 +376,8 @@ footer{
     -ms-flex-direction: column;
     flex-direction: column;
     img{
-        height: 27.5vh;
-        width: 27.5vh;
+        height: 240px;
+        width: 240px;
     }
 }
 @media (max-width: 768px) {
@@ -405,6 +420,10 @@ footer{
         color: #6a6d75;
         line-height: 18px;
         text-align: justify;
+        width: 240px;
+        font-weight: 300;
+        padding-bottom: 10px;
+        
     }
     span{
         margin-top: 15px;
