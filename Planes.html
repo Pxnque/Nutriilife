@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="icon" type="image/x-icon" href="logo.png" />
 </head>
 <body>
     <header style="background-color: #003755;">
@@ -22,7 +22,7 @@
                 <li><a href="Menu">Menú</a></li>
                 <li><a href="Blog.html">Blog</a></li>
             </ul>
-            <div class="botones">
+            <div class="botones" id="botonesAuth">
                 <a href="Login.html" class="action_btn" id="inicioS">INICIAR SESIÓN</a>
                 <a href="Registro.html" class="action_btn" id="inicioU">ÚNETE</a>
             </div>
@@ -95,23 +95,23 @@
                         <li><a href="#planes">Planes</a></li>
                         <li><a href="#consejos">Consejos Saludables</a></li>
                         <li><a href="#suscripciones">Suscripciones</a></li>
-                        <li><a href="#carta">Platillos a la Carta</a></li>
+                        <li><a href="#carta">Platillos a la carta</a></li>
                         <li><a href="#blog">Blog</a></li>
                     </div>
                 </ul>
                 <ul class="footer-navlist-item-list">
                     <div class="footer-navlist-item">
-                        <li><a href="#soporte">Centro de Soporte</a></li>
-                        <li><a href="#reglas">Reglas del Blog</a></li>
-                        <li><a href="#contacto">Correo de Contacto</a></li>
-                        <li><a href="#chat">Chat de Soporte</a></li>
+                        <li><a href="#soporte">Centro de soporte</a></li>
+                        <li><a href="#reglas">Reglas del blog</a></li>
+                        <li><a href="#contacto">Correo de contacto</a></li>
+                        <li><a href="#chat">Chat de soporte</a></li>
                         <li><a href="#verificacion">Verificación Nutrii</a></li>
                     </div>
                 </ul>
             </div>
         </div>
         <div class="footer-copy">
-            <p>&copy; 2024 NutriiLife | <a target="_blank" href="#link">Equipo de Desarrollo NutriiLife</a></p>
+            <p>&copy; 2024 NutriiLife |  <a target="_blank" href="#link">Nutriilife Dev Team</a></p>
         </div>
     </footer>
     <script>
@@ -140,6 +140,22 @@
                 alert('Debe iniciar sesión para suscribirse a un plan.');
                 window.location.href = 'Login.html';
             }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var nombreCompleto = localStorage.getItem('nombre_completo');
+            if (nombreCompleto) {
+                var botonesAuth = document.getElementById('botonesAuth');
+                botonesAuth.innerHTML = `
+                    <a href="Cuenta.html" class="action_btn">DETALLES DE CUENTA</a>
+                    <button class="action_btn" style="background-color: red;" onclick="logout()">SALIR</button>
+                `;
+            }
+        });
+
+        function logout() {
+            localStorage.clear();
+            window.location.href = 'Planes.html';
         }
     </script>
 </body>

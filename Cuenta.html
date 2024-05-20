@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de la Cuenta</title>
+    <link rel="stylesheet" href="nutriilife.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+</head>
+<body>
+    <header style="background-color: #003755;">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" height="80px" width="80px"/>
+            </div>
+            <ul class="links">
+                <li><a href="Planes.html">Planes</a></li>
+                <li><a href="HT">Healthy tips </a></li>
+                <li><a href="Menu"> Menu</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+            <div class="botones">
+                <a href="LandingPage.html" class="action_btn">VOLVER A LA PÁGINA PRINCIPAL</a>
+            </div>
+        </div>
+    </header>
+    <main style="padding: 20px; text-align: center;">
+        <h1>Detalles de la Cuenta</h1>
+        <div id="detalle-container" style="background-color: #e0f7fa; padding: 20px; border-radius: 10px; display: inline-block;">
+            <img src="img/usuario.png" alt="Usuario" height="150px" width="150px" style="margin-bottom: 20px;"/>
+            <div id="detalles-usuario" style="margin-top: 20px; text-align: left;">
+                <p><strong>Nombre Completo:</strong> <span id="nombre-completo"></span></p>
+                <p><strong>Número de Celular:</strong> <span id="numero-celular"></span></p>
+                <p><strong>Correo Electrónico:</strong> <span id="correo-electronico"></span></p>
+                <p><strong>Usuario:</strong> <span id="usuario"></span></p>
+                <p><strong>Plan Contratado:</strong> <span id="plan-contratado"></span></p>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var nombreCompleto = localStorage.getItem('nombre_completo');
+            var numeroCelular = localStorage.getItem('numero_celular');
+            var correoElectronico = localStorage.getItem('correo_electronico');
+            var usuario = localStorage.getItem('usuario');
+            var planNombre = localStorage.getItem('plan_nombre');
+
+            document.getElementById('nombre-completo').textContent = nombreCompleto;
+            document.getElementById('numero-celular').textContent = numeroCelular;
+            document.getElementById('correo-electronico').textContent = correoElectronico;
+            document.getElementById('usuario').textContent = usuario;
+            document.getElementById('plan-contratado').textContent = planNombre;
+        });
+    </script>
+</body>
+<footer>
+    <div class="footer-contenido">
+        <div class="footer-comunidad">
+            <h3 class="titulos-footer">Comunidad</h3>
+            <div class="footer-icongroup">
+              <a href="#facebook"><i class="fa-brands fa-facebook"></i></a> 
+              <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#G+"><i class="fa-brands fa-google-plus"></i></a> 
+              <a href="#Youtube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#tiktok"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#telgram"><i class="fa-brands fa-telegram"></i></a>
+              <a href="#x"><i class="fa-brands fa-x"></i></a>
+            </div>
+        </div>
+        <div class="footer-navlist">
+            <h3 class="titulos-footer">Sobre nosotros</h3>
+            <h3 class="titulos-footer">Servicios</h3>
+            <h3 class="titulos-footer">Soporte</h3>
+            <ul class="footer-navlist-item-list">
+                <div class="footer-navlist-item">
+                    <li><a href="#mision">Mision</a></li>
+                    <li><a href="#mision">Vision</a></li>
+                    <li ><a href="#mision">Avisos legales</a></li>
+                    <li ><a href="#mision">Terminos</a></li>
+                    <li ><a href="#mision">Privacidad</a></li>
+                </div>
+            </ul>
+            <ul class="footer-navlist-item-list">
+                <div class="footer-navlist-item">
+                    <li ><a href="#mision">Planes</a></li>
+                    <li ><a href="#mision">Healthy tips</a></li>
+                    <li ><a href="#mision">Suscripciones</a></li>
+                    <li ><a href="#mision">Platillos a la carta</a></li>
+                    <li ><a href="#mision">Blog</a></li>
+                </div>
+            </ul>
+            <ul class="footer-navlist-item-list">
+                <div class="footer-navlist-item">
+                    <li ><a href="#mision"> Centro de soporte</a></li>
+                    <li ><a href="#mision">Reglas del blog</a></li>
+                    <li ><a href="#mision">Correo de contacto</a></li>
+                    <li ><a href="#mision">Chat de soporte</a></li>
+                    <li ><a href="#mision">Verificacion nutrii </a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <p>&copy; 2024 NutriiLife |  <a target="_blank" href="#link">Nutriilife Dev Team</a></p>
+    </div>
+</footer>
+</html>
