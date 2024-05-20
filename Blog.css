@@ -316,11 +316,144 @@ footer{
         }
 }
 
-#bienvenido-div {
-    padding: 10px;
-    text-align: center;
+
+.section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+.category {
+    margin-bottom: 20px;
+    background-color: #e6e6e6; /* Fondo más claro para diferenciar secciones */
+}
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Asegura espacio uniforme */
+}
+
+.card {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 10px 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.5rem;
+    overflow: hidden; /* Previene desbordamiento */
+    border-radius: 8px; /* Bordes redondeados para las tarjetas */
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.category-title {
+    font-family: 'Georgia', serif; /* Cambio a una fuente más elegante */
+    color: #024959; /* Color oscuro para mayor contraste */
+    font-size: 26px;
+    background-color: #f0f0f0; /* Fondo claro para destacar el texto */
+    padding: 10px 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15); /* Sombra sutil */
+    display: inline-block;
+    animation: pulse 2s infinite; /* Animación que cambia la opacidad */
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.75; }
+    100% { opacity: 1; }
+}
+
+
+
+.card {
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+    overflow: hidden;
+}
+
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.like-button, .dislike-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.like-button:hover, .dislike-button:hover {
+    color: #025891; /* Color al pasar el ratón por encima para mayor interacción */
+}
+
+/* Añadir estilos adicionales para el hover de los botones para mejorar la interacción */
+.like-button:hover, .dislike-button:hover {
+    color: #003755;
+}
+
+.comments {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.user-img {
+    width: 100px;
+    height: 150px;
+    border-radius: 5px; /* Bordes ligeramente redondeados si prefieres */
+    object-fit: cover; /* Esto asegura que la imagen se recorte para llenar el espacio sin deformarse */
+    margin-right: 10px;
+    border: 2px solid #ddd; /* Opcional: un borde para mejorar el contraste */
+}
+
+/* Estilos específicos para cada categoría */
+.category-title-nutricion {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    animation: pulse-green 2s infinite;
+}
+
+.category-title-fitness {
+    background-color: #2196F3; /* Azul */
+    color: white;
+    animation: pulse-blue 2s infinite;
+}
+
+.category-title-tips {
+    background-color: #FF9800; /* Naranja */
+    color: white;
+    animation: pulse-orange 2s infinite;
+}
+
+@keyframes pulse-green {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+@keyframes pulse-blue {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+@keyframes pulse-orange {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+.card-content {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px; /* Bordes redondeados para el contenido de la tarjeta */
 }

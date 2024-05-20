@@ -12,8 +12,6 @@ $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$pa
 // Verificar si la conexión fue exitosa
 if (!$conn) {
     die("Error de conexión: " . pg_last_error());
-} else {
-    echo "Conexión exitosa<br>"; // Mensaje de depuración
 }
 
 // Obtener los datos del formulario enviados por POST
@@ -32,9 +30,12 @@ $result = pg_query($conn, $sql);
 
 // Verificar si la consulta fue exitosa
 if ($result) {
-    echo "Usuario registrado exitosamente<br>";
+   
+    header("Location: ../Login.html");
+    echo "<script>alert('Usuario registrado con éxito');</script>";
 } else {
-    echo "Error al registrar el usuario: " . pg_last_error($conn) . "<br>"; // Mostrar el error de la base de datos
+    echo "<script>alert('Error al registrar el usuario');</script>";
+    header("Location: ../Registro.html");
 }
 
 // Cerrar la conexión

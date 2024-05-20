@@ -1,127 +1,158 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>NutriiLife</title>
-        <link rel="stylesheet" href="nutriilife.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" type="images/x-icon" href="./logo.png" />
-       
-    </head>
-    
-    <body>
-        <header style="background-color: #003755;">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="logo.png" height="80px" width="80px"/>
-                </div>
-                <ul class="links">
-                    <li><a href="planes">Planes</a></li>
-                    <li><a href="HT">Healthy tips </a></li>
-                    <li><a href="Menu"> Menu</a></li>
-                    <li><a href="Blog">Blog</a></li>
-                </ul>
-                <div class="botones">
-                    <a href="Login.html" class="action_btn" id="inicioS">INICIAR SESIÓN</a>
-                    <a href="Registro.html" class="action_btn" id="inicioU">UNETE</a>
-                </div>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriiLife</title>
+    <link rel="stylesheet" href="nutriilife.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+</head>
+<body>
+    <header style="background-color: #003755;">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" height="80px" width="80px"/>
             </div>
-        </header>
-        <div class="div-carr">
-            <div class="carrusel">
-                <div class="slider">
-                    <div class="list">
-                        <div class="item">
-                            <img src="img/platillo1.jpg">
-                        </div>
-                        <div class="item">
-                            <img src="img/platillo2.jpg">
-                        </div>
-                        <div class="item">
-                            <img src="img/platillo3.jpg">
-                        </div>
-                        <div class="item">
-                            <img src="img/platillo4.jpg">
-                        </div>
-                        <div class="item">
-                            <img src="img/platillo5.jpg">
-                        </div>
-                    </div>
-                    <div class="buttons-carousel">
-                        <button id="prev"><</button>
-                        <button id="next">></button>
-                    </div>
-                    <ul class="dots">
-                        <li class="active"></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                
-            </div>
-            <div class="texto">
-                <p>En nutrilife tenemos un control de calidad perfecto en nuestros productos asi como el empeño que colocamos en cada uno de estos</p>
+            <ul class="links">
+                <li><a href="Planes.html">Planes</a></li>
+                <li><a href="HT">Healthy tips </a></li>
+                <li><a href="Menu"> Menu</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+            <div class="botones">
+                <a href="Login.html" class="action_btn" id="inicioS">INICIAR SESION</a>
+                <a href="Registro.html" class="action_btn" id="inicioU">UNETE</a>
             </div>
         </div>
-        <button class="btnDS">Quieres conocer nuestra dieta de la semana?</button>
-        
-        <footer>
-            <div class="footer-contenido">
-                <div class="footer-comunidad">
-                    <h3 class="titulos-footer">Comunidad</h3>
-                    <div class="footer-icongroup">
-                      <a href="#facebook"><i class="fa-brands fa-facebook"></i></a> 
-                      <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
-                      <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
-                      <a href="#G+"><i class="fa-brands fa-google-plus"></i></a> 
-                      <a href="#Youtube"><i class="fa-brands fa-youtube"></i></a>
-                      <a href="#tiktok"><i class="fa-brands fa-tiktok"></i></a>
-                      <a href="#telgram"><i class="fa-brands fa-telegram"></i></a>
-                      <a href="#x"><i class="fa-brands fa-x"></i></a>
+    </header>
+
+    <div id="bienvenido-div" style="display: none; padding: 10px; text-align: center;">
+        <h2 id="bienvenido-mensaje"></h2>
+    </div>
+
+    <div class="div-carr">
+        <div class="carrusel">
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="img/platillo1.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/platillo2.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/platillo3.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/platillo4.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/platillo5.jpg">
                     </div>
                 </div>
-                <div class="footer-navlist">
-                    <h3 class="titulos-footer">Sobre nosotros</h3>
-                    <h3 class="titulos-footer">Servicios</h3>
-                    <h3 class="titulos-footer">Soporte</h3>
-                    <ul class="footer-navlist-item-list">
-                        <div class="footer-navlist-item">
-                            <li><a href="#mision">Mision</a></li>
-                            <li><a href="#mision">Vision</a></li>
-                            <li ><a href="#mision">Avisos legales</a></li>
-                            <li ><a href="#mision">Terminos</a></li>
-                            <li ><a href="#mision">Privacidad</a></li>
-                        </div>
-                    </ul>
-                    <ul class="footer-navlist-item-list">
-                        <div class="footer-navlist-item">
-                            <li ><a href="#mision">Planes</a></li>
-                            <li ><a href="#mision">Healthy tips</a></li>
-                            <li ><a href="#mision">Suscripciones</a></li>
-                            <li ><a href="#mision">Platillos a la carta</a></li>
-                            <li ><a href="#mision">Blog</a></li>
-                        </div>
-                    </ul>
-                    <ul class="footer-navlist-item-list">
-                        <div class="footer-navlist-item">
-                            <li ><a href="#mision"> Centro de soporte</a></li>
-                            <li ><a href="#mision">Reglas del blog</a></li>
-                            <li ><a href="#mision">Correo de contacto</a></li>
-                            <li ><a href="#mision">Chat de soporte</a></li>
-                            <li ><a href="#mision">Verificacion nutrii </a></li>
-                        </div>
-                    </ul>
+                <div class="buttons-carousel">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="texto">
+            <p>En nutrilife tenemos un control de calidad perfecto en nuestros productos asi como el empenio que colocamos en cada uno de estos</p>
+        </div>
+    </div>
+    <button class="btnDS">¿Quieres conocer nuestra dieta de la semana?</button>
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-comunidad">
+                <h3 class="titulos-footer">Comunidad</h3>
+                <div class="footer-icongroup">
+                  <a href="#facebook"><i class="fa-brands fa-facebook"></i></a> 
+                  <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#G+"><i class="fa-brands fa-google-plus"></i></a> 
+                  <a href="#Youtube"><i class="fa-brands fa-youtube"></i></a>
+                  <a href="#tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                  <a href="#telgram"><i class="fa-brands fa-telegram"></i></a>
+                  <a href="#x"><i class="fa-brands fa-x"></i></a>
                 </div>
             </div>
-            <div class="footer-copy">
-                <p>&copy; 2024 NutriiLife |  <a target="_blank" href="#link">Nutriilife Dev Team</a></p>
+            <div class="footer-navlist">
+                <h3 class="titulos-footer">Sobre nosotros</h3>
+                <h3 class="titulos-footer">Servicios</h3>
+                <h3 class="titulos-footer">Soporte</h3>
+                <ul class="footer-navlist-item-list">
+                    <div class="footer-navlist-item">
+                        <li><a href="#mision">Mision</a></li>
+                        <li><a href="#mision">Vision</a></li>
+                        <li ><a href="#mision">Avisos legales</a></li>
+                        <li ><a href="#mision">Terminos</a></li>
+                        <li ><a href="#mision">Privacidad</a></li>
+                    </div>
+                </ul>
+                <ul class="footer-navlist-item-list">
+                    <div class="footer-navlist-item">
+                        <li ><a href="#mision">Planes</a></li>
+                        <li ><a href="#mision">Healthy tips</a></li>
+                        <li ><a href="#mision">Suscripciones</a></li>
+                        <li ><a href="#mision">Platillos a la carta</a></li>
+                        <li ><a href="#mision">Blog</a></li>
+                    </div>
+                </ul>
+                <ul class="footer-navlist-item-list">
+                    <div class="footer-navlist-item">
+                        <li ><a href="#mision"> Centro de soporte</a></li>
+                        <li ><a href="#mision">Reglas del blog</a></li>
+                        <li ><a href="#mision">Correo de contacto</a></li>
+                        <li ><a href="#mision">Chat de soporte</a></li>
+                        <li ><a href="#mision">Verificacion nutrii </a></li>
+                    </div>
+                </ul>
             </div>
-        </footer>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2024 NutriiLife |  <a target="_blank" href="#link">Nutriilife Dev Team</a></p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var nombreCompleto = localStorage.getItem('nombre_completo');
+            var planNombre = localStorage.getItem('plan_nombre');
 
-    <script src="js/nutriilife.js"></script>
-    </body>
+            if (nombreCompleto && planNombre) {
+                var bienvenidoDiv = document.getElementById('bienvenido-div');
+                var bienvenidoMensaje = document.getElementById('bienvenido-mensaje');
+
+                var planColor = '';
+                switch (planNombre) {
+                    case 'Health Starter':
+                        planColor = 'orange';
+                        break;
+                    case 'Health Advanced':
+                        planColor = 'silver';
+                        break;
+                    case 'Health Premium':
+                        planColor = 'gold';
+                        break;
+                    default:
+                        planColor = 'white';
+                        break;
+                }
+
+                bienvenidoDiv.style.backgroundColor = planColor;
+                bienvenidoMensaje.textContent = 'Bienvenido: ' + nombreCompleto;
+                bienvenidoDiv.style.display = 'block';
+            }
+        });
+    </script>
+</body>
 </html>

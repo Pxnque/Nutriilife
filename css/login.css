@@ -141,7 +141,7 @@ label{
 @media screen and (min-width: 900px){
     .main-container{
         flex-direction: row;
-        height: 100vh;
+        height: 100%;
     }
     .left,.right {
         display: flex;
