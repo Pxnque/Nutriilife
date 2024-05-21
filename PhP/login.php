@@ -17,13 +17,15 @@ if (!$conn) {
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-$sql = "SELECT id, nombre_completo, usuario FROM usuarios WHERE correo_electronico = '$email' AND contrasena = '$password'";
+$sql = "SELECT id, nombre_completo, numero_celular, correo_electronico, usuario FROM usuarios WHERE correo_electronico = '$email' AND contrasena = '$password'";
 $result = pg_query($conn, $sql);
 
 if (pg_num_rows($result) > 0) {
     $row = pg_fetch_assoc($result);
     $usuario_id = $row['id'];
     $nombre_completo = $row['nombre_completo'];
+    $numero_celular = $row['numero_celular'];
+    $correo_electronico = $row['correo_electronico'];
     $usuario = $row['usuario'];
 
     // Obtener el plan del usuario
@@ -40,6 +42,8 @@ if (pg_num_rows($result) > 0) {
     echo "<script>
             localStorage.setItem('usuario_id', '$usuario_id');
             localStorage.setItem('nombre_completo', '$nombre_completo');
+            localStorage.setItem('numero_celular', '$numero_celular');
+            localStorage.setItem('correo_electronico', '$correo_electronico');
             localStorage.setItem('usuario', '$usuario');
             localStorage.setItem('plan_nombre', '$plan_nombre');
             alert('Login realizado con éxito');
