@@ -9,6 +9,9 @@ body{
     background-color: #f0f0f0
     
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .navbar{
     background-color: #003755;
@@ -43,6 +46,9 @@ body{
 header{
     position: relative;
     padding: 0 2rem;
+    /*position: sticky;
+    top: 0;
+    z-index: 999;*/
 }
 .navbar .logo{
    position: relative;
@@ -325,26 +331,17 @@ footer{
     border-radius: 5px;
 }
 .main-titulo{
-    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    color: #000000;
-    padding-top: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    color: #002c9b;
+    padding-top: 12vh;
     text-align: center;
 }
 
 .platillos{
     font-family: "HelveticaNeue";
 }
-.titulos-planes{
-    font-size: 22px;
-    margin: 40px 0 24px;
-    font-weight: 600;
-    line-height: 1.2;
-    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    color: #303236;
-    padding-left: 5%;
-}
+
 .titulos-planes #starter{
-    color: #CD7F32;
+    color: rgb(158, 98, 37);
 }
 .titulos-planes #advanced{
     color: #c0c0c0;
@@ -376,31 +373,57 @@ footer{
     -ms-flex-direction: column;
     flex-direction: column;
     img{
-        height: 240px;
-        width: 240px;
+        height: 280px;
+        width: 280px;
     }
 }
-@media (max-width: 768px) {
+.titulos-planes{
+    font-size: 22px;
+    margin: 40px 0 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    color: #303236;
+}
+
+@media (max-width: 767px) {
     .platillos-container {
-        overflow:hidden
+        overflow: hidden;
+        width: 100%; /* Assuming full width on small screens */
+        padding-left: 5%;
+    }
+    .titulos-planes {
+        padding-left: 5%;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 961px) {
     .platillos-container {
-        width:750px
+        width: 750px;
+        margin: 0 auto;
+    }
+    .titulos-planes {
+        padding-left: calc((100% - 750px) / 2);
     }
 }
 
-@media (min-width: 962px) {
+@media (min-width: 962px) and (max-width: 1199px) {
     .platillos-container {
-        width:940px
+        width: 940px;
+        margin: 0 auto;
+    }
+    .titulos-planes {
+        padding-left: calc((100% - 940px) / 2);
     }
 }
 
 @media (min-width: 1200px) {
     .platillos-container {
-        width:1170px
+        width: 1170px;
+        margin: 0 auto;
+    }
+    .titulos-planes {
+        padding-left: calc((100% - 1170px) / 2);
     }
 }
 .platillo-detalles{
@@ -420,7 +443,7 @@ footer{
         color: #6a6d75;
         line-height: 18px;
         text-align: justify;
-        width: 240px;
+        width: 280px;
         font-weight: 300;
         padding-bottom: 10px;
         
@@ -431,4 +454,111 @@ footer{
         font-size: 16px;
         color: #303236;
     }
+}
+.mini-navbar{
+    background-color: #ffffff;
+    padding: 0;
+    
+    top: 10vh;
+    height: 51px;
+    width: 100%;
+    
+    font-size: 13px;
+    border-bottom: 1px solid #e4e6eb;
+    -webkit-box-shadow: 0px 1px 8px rgba(0,0,0,0.02);
+    box-shadow: 0px 1px 8px rgba(0,0,0,0.02)
+}
+
+.contenedor.Mnavbar {
+    margin-right: auto;
+    margin-left: auto;
+    zoom:1;
+}
+
+.contenedor.Mnavbar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+@media (max-width: 768px) {
+    .contenedor.Mnavbar {
+        overflow:hidden
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor.Mnavbar {
+        width:750px
+    }
+}
+
+@media (min-width: 962px) {
+    .contenedor.Mnavbar {
+        width:940px
+    }
+}
+
+@media (min-width: 1200px) {
+    .contenedor.Mnavbar {
+        width:1170px
+    }
+}
+.Mnavbar-contenido{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 14vw;
+}
+.Mnavbar-ligas{
+    float: left;
+    width: 700px;
+    
+    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 400;
+    color: #6a6d75;
+    font-size: 14px;
+    padding: 0 5px;
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    ul{
+        display: flex;
+        list-style-type: disc;
+        padding-inline-start: 40px;
+        unicode-bidi: isolate;
+        list-style: none;
+        padding-right: 12px;
+    }
+    li{
+        display: list-item;
+        text-align: -webkit-match-parent;
+        unicode-bidi: isolate;
+        margin-left: 18px;
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+        font-weight: 400;
+        color: #6a6d75;
+    }
+    a:hover{
+        color: #0d2b58
+    }
+    
+}
+.Mnavbar-info{
+    padding-right: 15vw;
+    color: #1eb392;
+    font-weight: bold;
+    font-family: "Arial";
+    font-style: normal;
+    
 }
