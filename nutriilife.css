@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
+    font-family: 'Poppins', sans-serif; 
 }
+
 
 body{
     background-color: #f0f0f0
@@ -350,32 +351,12 @@ footer{
     color: #ffd700;
 }
 .platillos-container{
-    margin-right: auto;
-    margin-left: auto;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+   
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    -webkit-column-gap: 16px;
-    column-gap: 16px
-}
-.platillo-box{
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0 0 16px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    img{
-        height: 280px;
-        width: 280px;
-    }
+    grid-template-columns: repeat(3, auto);
+    row-gap: 50px;
+    column-gap: 70px;
+    margin-bottom: 32px;
 }
 .titulos-planes{
     font-size: 22px;
@@ -419,42 +400,14 @@ footer{
 
 @media (min-width: 1200px) {
     .platillos-container {
-        width: 1170px;
+        width: 1670px;
         margin: 0 auto;
     }
     .titulos-planes {
-        padding-left: calc((100% - 1170px) / 2);
+        padding-left: calc((100% - 1670px) / 2);
     }
 }
-.platillo-detalles{
-    margin-top: 16px;
-    font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.38;
-    color: #303236;
-    a{
-        text-decoration: none;
-        color: #0f346c;
-    }
-    p{
-        font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-        font-size: 15px;
-        color: #6a6d75;
-        line-height: 18px;
-        text-align: justify;
-        width: 280px;
-        font-weight: 300;
-        padding-bottom: 10px;
-        
-    }
-    span{
-        margin-top: 15px;
-        font-family: "Cera Pro", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-        font-size: 16px;
-        color: #303236;
-    }
-}
+
 .mini-navbar{
     background-color: #ffffff;
     padding: 0;
@@ -510,7 +463,7 @@ footer{
     justify-content: space-between;
     -webkit-box-align: center;
     align-items: center;
-    padding-left: 14vw;
+    padding-left: 38px;
 }
 .Mnavbar-ligas{
     float: left;
@@ -560,5 +513,111 @@ footer{
     font-weight: bold;
     font-family: "Arial";
     font-style: normal;
+    
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+.card .card_landing {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background: linear-gradient(transparent 80%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+}
+
+.card .card_landing h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.card .card_info {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background: #fff;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: .5s;
+}
+
+.card:hover .card_info {
+    left: 100%;
+}
+
+.card_info .head {
+    padding: 5px 0;
+    border-bottom: solid 1px #bc8811;
+}
+
+.card_info .head .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #003755;
+}
+
+.card_info .head .description {
+    display: flex;
+    gap: 10px;
+}
+
+.card_info .head .description .item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.card_info .head .description .item i {
+    color: #003755;
+    font-size: 15px;
+}
+
+.card_info .head .description .item p {
+    font-size: 13px;
+    
+}
+
+.card_info .content {
+    margin-top: 15px;
+}
+.card_info .content .title{
+    font-weight: bold;
+}
+
+.card_info .content .list-card {
+    padding-top: 10px;
+}
+
+.card_info .content .list-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    list-style: none;
+    
+}
+
+.card_info .action .btn {
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background: #049800;
+    display: block;
+    margin-top: 10px;
     
 }
