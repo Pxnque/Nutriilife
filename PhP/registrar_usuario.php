@@ -4,7 +4,7 @@ $host = "localhost"; // La dirección del servidor PostgreSQL
 $port = "5432"; // Puerto de PostgreSQL (por defecto es 5432)
 $dbname = "NutriiLife"; // El nombre de tu base de datos
 $user = "postgres"; // Tu nombre de usuario de PostgreSQL
-$password = "2121"; // Tu contraseña de PostgreSQL
+$password = "1234"; // Tu contraseña de PostgreSQL
 
 // Realizar la conexión a PostgreSQL
 $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");

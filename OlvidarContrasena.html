@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/olvidar_contrasena.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="right">
+            <form action="http://localhost:8081/NutriiLife/PhP/recuperar_contrasena.php" method="post" class="fields">
+                <img src="logo.png" alt="logo-arriba-login" width="150vw" height="150vh">
+                <h1>Recuperar Contraseña</h1>
+                <label for="usuario">Nombre de Usuario</label>
+                <input id="usuario" name="usuario" type="text" required>
+                <label for="new_password">Nueva Contraseña</label>
+                <input id="new_password" name="new_password" type="password" required>
+                <button class="login-button" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
