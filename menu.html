@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="nutriilife.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="logo.png" />
     <title>Menu</title>
 </head>
 <body>
@@ -19,12 +23,14 @@
                 <li><a href="Blog.html">Blog</a></li>
             </ul>
             <div class="botones">
-                <a href="Login.html" class="action_btn" id="inicioS">INICIAR SESION</a>
-                <a href="Registro.html" class="action_btn" id="inicioU">UNETE</a>
+                <a href="Login.html" class="action_btn" id="inicioS">INICIAR SESIÓN</a>
+                <a href="Registro.html" class="action_btn" id="inicioU">ÚNETE</a>
+                <a href="Cuenta.html" class="action_btn" id="detallesCuenta" style="display: none;">DETALLES DE CUENTA</a>
+                <button class="action_btn" id="salir" style="background-color: red; display: none;" onclick="logout()">SALIR</button>
             </div>
         </div>
     </header>
-    
+
     <section class="mini-navbar">
         <div class="contenedor-Mnavbar">
             <div class="Mnavbar-contenido">
@@ -42,160 +48,157 @@
             </div>
         </div>
     </section>
+
     <div class="main-titulo">
         <h1>Explora nuestros platillos del mes</h1>
     </div>
+
     <section class="platillos">
         <div class="titulos-planes" id="gratis">
             <h3>Plan gratis</h3>
         </div>
         <div class="platillos-container">
-            
             <div class="platillo-box">
                 <a href="">
                     <img src="Ensaladita.jpg" alt="imagen">
                 </a>
                 <div class="platillo-detalles">
-                    <a href="" id="platillo-titulo">Kit de ensalada mediterranea</a>
-                    <p id="platillo-descripcion">Ensalada mediterranea con pasta de coditos. Cuenta con 5 porciones</p>
+                    <a href="" id="platillo-titulo">Kit de ensalada mediterránea</a>
+                    <p id="platillo-descripcion">Ensalada mediterránea</p>
+                    <p id="platillo-descripcion">con pasta de coditos</p>
+                    <p id="platillo-descripcion">Cuenta con 5 porciones</p>
                     <span id="platillo-precio">$60.00</span>
                 </div>
             </div>
             <div class="platillo-box">
-                <img src="/img/menu-platillo1 (1).jpg" alt="imagen">
+                <img src="img/menu-platillo1 (1).jpg" alt="imagen">
                 <div class="platillo-detalles">
-                    <a href="" id="platillo-titulo">Kit de berrys con yogurth</a>
-                    <p id="platillo-descripcion">Yogurth griego bajo en grasa con una combinacion de berrys. Cuenta con 5 porciones</p>
+                    <a href="" id="platillo-titulo">Kit de berrys con yogurt</a>
+                    <p id="platillo-descripcion">Yogurt griego </p>
+                    <p id="platillo-descripcion">bajo en grasa con una </p>
+                    <p id="platillo-descripcion">combinación de berrys.</p>
+                    <p id="platillo-descripcion"> Cuenta con 5 porciones</p>
                     <span id="platillo-precio">$39.00</span>
                 </div>
             </div>
             <div class="platillo-box">
-                <img src="/img/menu-platillo1.jpg" alt="imagen">
+                <img src="img/menu-platillo1.jpg" alt="imagen">
                 <div class="platillo-detalles">
                     <a href="" id="platillo-titulo">Kit de brocheta</a>
-                    <p id="platillo-descripcion">Kit de brocheta de carne Wagyu A3 con verduras salteadas y dip de patata. Cuenta con 7 porciones</p>
+                    <p id="platillo-descripcion">Kit de brocheta de carne Wagyu A3</p>
+                    <p id="platillo-descripcion">con verduras salteadas y dip de patata.</p>
+                    <p id="platillo-descripcion"> Cuenta con 7 porciones</p>
                     <span id="platillo-precio">$59.99</span>
                 </div>
             </div>
-            
         </div>
+
         <div class="titulos-planes" id="starter">
             <h3 id="starter">Plan Starter</h3>
         </div>
         <div class="platillos-container">
-            
             <div class="platillo-box">
-                <img src="/img/menu-platillo1 (3).jpg" alt="imagen">
+                <img src="img/menu-platillo1 (3).jpg" alt="imagen">
                 <div class="platillo-detalles">
-                    <a href="" id="platillo-titulo">Kit de arroz veracruzano y huevo</a>
-                    <p id="platillo-descripcion">Arroz a las finas hiervas acompañado de verduras y huevos. Cuenta con 5 porciones</p>
+                    <a href="" id="platillo-titulo">Kit de arroz veracruzano</a>
+                    <a href="" id="platillo-titulo">y huevo</a>
+                    <p id="platillo-descripcion">Arroz a las finas hierbas </p>
+                    <p id="platillo-descripcion"> acompañado de verduras y huevos.</p>
+                    <p id="platillo-descripcion">Cuenta con 5 porciones</p>
                     <span id="platillo-precio">$45.00</span>
                 </div>
             </div>
             <div class="platillo-box">
-                <img src="/img/menu-platillo1 (4).jpg" alt="imagen">
+                <img src="img/menu-platillo1 (4).jpg" alt="imagen">
                 <div class="platillo-detalles">
-                    <a href="" id="platillo-titulo">Kit de puntas de ryb-eye con esparragos</a>
-                    <p id="platillo-descripcion">Puntas de jugoso filete ryb-eye acompañado de frescos esparragos salteados. Cuenta con 5 porciones</p>
+                    <a href="" id="platillo-titulo">Kit de puntas de</a>
+                    <a href="" id="platillo-titulo">rib-eye con espárragos</a>
+                    <p id="platillo-descripcion">Puntas de jugoso filete rib-eye</p>
+                    <p id="platillo-descripcion">acompañado de frescos</p>
+                    <p id="platillo-descripcion">espárragos salteados.</p>
+                    <p id="platillo-descripcion"> Cuenta con 5 porciones</p>
                     <span id="platillo-precio">$60.00</span>
                 </div>
             </div>
             <div class="platillo-box">
-                <img src="/img/menu-platillo1 (5).jpg" alt="imagen">
+                <img src="img/menu-platillo1 (5).jpg" alt="imagen">
                 <div class="platillo-detalles">
                     <a href="" id="platillo-titulo">Kit de poke de camarón</a>
-                    <p id="platillo-descripcion">Mezcla de verduras y frutas de temparada acompañado de camarón. Cuenta con 6 porciones</p>
+                    <p id="platillo-descripcion">Mezcla de verduras y frutas</p>
+                    <p id="platillo-descripcion">de temporada</p>
+                    <p id="platillo-descripcion">acompañado de camarón.</p>
+                    <p id="platillo-descripcion">Cuenta con 6 porciones</p>
                     <span id="platillo-precio">$47.00</span>
                 </div>
             </div>
-            <div class="platillo-box">
-                <img src="/img/menu-platillo1 (6).jpg" alt="imagen">
-                <div class="platillo-detalles">
-                    <a href="" id="platillo-titulo">Kit de pasta y croquetas de pollo</a>
-                    <p id="platillo-descripcion">Pasta italiana con ricas croquetas de pollo veganas. Cuenta con 5 porciones</p>
-                    <span id="platillo-precio">$49.99</span>
-                </div>
-            </div>
-            <div class="platillo-box">
-                <img src="/img/menu-platillo1 (7).jpg" alt="imagen">
-                <div class="platillo-detalles">
-                    <a href="" id="platillo-titulo">Kit de ramen kung pao</a>
-                    <p id="platillo-descripcion">Proveniente de la región de kaito, está acompañado de panzeta de cerdo y fideos de soya. Cuenta con 9 porciones</p>
-                    <span id="platillo-precio">$77.00</span>
-                </div>
-            </div>
-            
         </div>
+
         <div class="titulos-planes" id="advanced">
             <h3 id="advanced">Plan Advanced</h3>
         </div>
         <div class="platillos-container">
-            
             <div class="platillo-box">
-                <img src="/img/menu-platillo1 (8).jpg" alt="imagen">
+                <img src="img/menu-platillo1 (8).jpg" alt="imagen">
                 <div class="platillo-detalles">
-                    <a href="" id="platillo-titulo">Kit de salmón con puré de camote</a>
-                    <p id="platillo-descripcion">Salmón provenietnte del río Niagara junto con una mezcla de ricas verduras y puré de camote. Cuenta con 5 porciones</p>
+                    <a href="" id="platillo-titulo">Kit de salmón</a>
+                    <a href="" id="platillo-titulo">con puré de camote</a>
+                    <p id="platillo-descripcion">Salmón proveniente del río Niagara</p>
+                    <p id="platillo-descripcion">junto con una mezcla de</p>
+                    <p id="platillo-descripcion">ricas verduras y puré de camote.</p>
+                    <p id="platillo-descripcion"> Cuenta con 5 porciones</p>
                     <span id="platillo-precio">$93.00</span>
                 </div>
             </div>
             <div class="platillo-box">
-                <img src="/img/menu-platillo1 (9).jpg" alt="imagen">
+                <img src="img/menu-platillo1 (9).jpg" alt="imagen">
                 <div class="platillo-detalles">
                     <a href="" id="platillo-titulo">Kit de ensalada noruega</a>
-                    <p id="platillo-descripcion">Ensalada de la región sur de noruega. Cuenta con 6 porciones</p>
+                    <p id="platillo-descripcion">Ensalada de la región</p>
+                    <p id="plan-contratado">sur de noruega.</p>
+                    <p id="platillo-descripcion"> Cuenta con 6 porciones</p>
                     <span id="platillo-precio">$55.00</span>
                 </div>
             </div>
             <div class="platillo-box">
-                <img src="/img/menu-platillo1 (10).jpg" alt="imagen">
+                <img src="img/menu-platillo1 (10).jpg" alt="imagen">
                 <div class="platillo-detalles">
                     <a href="" id="platillo-titulo">Kit de brunch New York</a>
-                    <p id="platillo-descripcion">Brunch al estilo queens de New york. Cuenta con 10 porciones</p>
+                    <p id="platillo-descripcion">Brunch al estilo</p>
+                    <p id="platillo-descripcion">Queens de New York.</p>
+                    <p id="platillo-descripcion">Cuenta con 10 porciones</p>
                     <span id="platillo-precio">$80.00</span>
                 </div>
             </div>
-            <div class="platillo-box">
-                <img src="/img/menu-platillo1 (11).jpg" alt="imagen">
-                <div class="platillo-detalles">
-                    <a href="" id="platillo-titulo">Kit de ensalada madrileña</a>
-                    <p id="platillo-descripcion">Conjunto de verduras de la zona de madrid acompañadas de un queso cottage al vino blanco. Cuenta con 5 porciones</p>
-                    <span id="platillo-precio">$30.00</span>
-                </div>
-            </div>
-            <div class="platillo-box">
-                <img src="/img/menu-platillo1 (12).jpg" alt="imagen">
-                <div class="platillo-detalles">
-                    <a href="" id="platillo-titulo">Kit de briami griego</a>
-                    <p id="platillo-descripcion">Plato vegetariano tradicional griego que consiste en una cazuela de verduras al horno. Los ingredientes básicos son calabacín, patatas, cebolla, tomates. Cuenta con 5 porciones</p>
-                    <span id="platillo-precio">$72.00</span>
-                </div>
-            </div>
-            
         </div>
+
         <div class="titulos-planes" id="premium">
             <h3 id="premium">Plan Premium</h3>
         </div>
         <div class="platillos-container">
-            
             <div class="platillo-box">
-                <img src="/img/menu-platillo1 (13).jpg" alt="imagen">
+                <img src="img/menu-platillo1 (13).jpg" alt="imagen">
                 <div class="platillo-detalles">
                     <a href="" id="platillo-titulo">Kit de poke ensenada</a>
-                    <p id="platillo-descripcion">Conjunto de frescas verduras de la región campirana de Brushets con un toque de salmón ahumado. Cuenta con 5 porciones de 200gr</p>
+                    <p id="platillo-descripcion">Conjunto de frescas verduras de</p>
+                    <P id="platillo-descripcion">la región campirana de Brushets</P>
+                    <p id="platillo-descripcion">con un toque de salmón ahumado.</p>
+                    <p id="platillo-descripcion">Cuenta con 5 porciones de 200gr</p>
                     <span id="platillo-precio">$90.00</span>
                 </div>
             </div>
             <div class="platillo-box">
-                <img src="/img/menu-platillo1 (14).jpg" alt="imagen">
+                <img src="img/menu-platillo1 (14).jpg" alt="imagen">
                 <div class="platillo-detalles">
                     <a href="" id="platillo-titulo">Kit de salmón nori</a>
-                    <p id="platillo-descripcion">Jugoso salmón de la región de nori acompañado de verduras tradicionales japonesas. Cuenta con 3 porciones</p>
+                    <p id="platillo-descripcion">Jugoso salmón de la región de nori</p>
+                    <p id="platillo-descripcion">acompañado de verduras</p>
+                    <p id="platillo-descripcion"> tradicionales japonesas.</p>
+                    <P id="platillo-descripcion">Cuenta con 3 porciones</P>
                     <span id="platillo-precio">$60.00</span>
                 </div>
             </div>
             <div class="platillo-box">
-                <img src="/img/menu-platillo1 (15).jpg" alt="imagen">
+                <img src="img/menu-platillo1 (15).jpg" alt="imagen">
                 <div class="platillo-detalles">
                     <a href="" id="platillo-titulo">Kit de bowls de temporada</a>
                     <p id="platillo-descripcion">4 bowls de calidad premium.</p>
@@ -203,40 +206,46 @@
                 </div>
             </div>
             <div class="platillo-box">
-                <img src="/img/menu-platillo1 (16).jpg" alt="imagen">
+                <img src="img/menu-platillo1 (16).jpg" alt="imagen">
                 <div class="platillo-detalles">
                     <a href="" id="platillo-titulo">Kit de palito de pez</a>
-                    <p id="platillo-descripcion">Receta tradicional de los arcos anarquicos que consiste en un medallón de pescado acompañado de tzatziki y verduras a la mexicana. Cuenta con 4 porciones</p>
+                    <p id="platillo-descripcion">Receta tradicional</p>
+                    <p id="platillo-descripcion">de los arcos anárquicos</p>
+                    <p id="platillo-descripcion">que consiste en un medallón</p>
+                    <p id="platillo-descripcion">de pescado</p>
+                    <p id="platillo-descripcion">acompañado de tzatziki</p>
+                    <p id="platillo-descripcion">y verduras a la mexicana.</p>
+                    <p id="platillo-descripcion"> Cuenta con 4 porciones</p>
                     <span id="platillo-precio">$160.00</span>
                 </div>
             </div>
             <div class="platillo-box">
-                <img src="/img/menu-platillo1 (17).jpg" alt="imagen">
+                <img src="img/menu-platillo1 (17).jpg" alt="imagen">
                 <div class="platillo-detalles">
                     <a href="" id="platillo-titulo">Kit de curry del medio oriente</a>
-                    <p id="platillo-descripcion">Tradicional curry de la península arabe, incluye pan pita. Cuenta con 6 porciones</p>
+                    <p id="platillo-descripcion">Tradicional curry</p>
+                    <p id="platillo-descripcion">de la península árabe</p>
+                    <p id="platillo-descripcion"> incluye pan pita.</p>
+                    <p id="platillo-descripcion"> Cuenta con 6 porciones</p>
                     <span id="platillo-precio">$100.00</span>
                 </div>
             </div>
-            
         </div>
-
     </section>
-
 
     <footer>
         <div class="footer-contenido">
             <div class="footer-comunidad">
                 <h3 class="titulos-footer">Comunidad</h3>
                 <div class="footer-icongroup">
-                  <a href="#facebook"><i class="fa-brands fa-facebook"></i></a> 
-                  <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#G+"><i class="fa-brands fa-google-plus"></i></a> 
-                  <a href="#Youtube"><i class="fa-brands fa-youtube"></i></a>
-                  <a href="#tiktok"><i class="fa-brands fa-tiktok"></i></a>
-                  <a href="#telgram"><i class="fa-brands fa-telegram"></i></a>
-                  <a href="#x"><i class="fa-brands fa-x"></i></a>
+                    <a href="#facebook"><i class="fa-brands fa-facebook"></i></a> 
+                    <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#G+"><i class="fa-brands fa-google-plus"></i></a> 
+                    <a href="#Youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#telgram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#x"><i class="fa-brands fa-x"></i></a>
                 </div>
             </div>
             <div class="footer-navlist">
@@ -245,36 +254,59 @@
                 <h3 class="titulos-footer">Soporte</h3>
                 <ul class="footer-navlist-item-list">
                     <div class="footer-navlist-item">
-                        <li><a href="#mision">Mision</a></li>
-                        <li><a href="#mision">Vision</a></li>
-                        <li ><a href="#mision">Avisos legales</a></li>
-                        <li ><a href="#mision">Terminos</a></li>
-                        <li ><a href="#mision">Privacidad</a></li>
+                        <li><a href="#mision">Misión</a></li>
+                        <li><a href="#vision">Visión</a></li>
+                        <li><a href="#avisos">Avisos legales</a></li>
+                        <li><a href="#terminos">Términos</a></li>
+                        <li><a href="#privacidad">Privacidad</a></li>
                     </div>
                 </ul>
                 <ul class="footer-navlist-item-list">
                     <div class="footer-navlist-item">
-                        <li ><a href="#mision">Planes</a></li>
-                        <li ><a href="#mision">Healthy tips</a></li>
-                        <li ><a href="#mision">Suscripciones</a></li>
-                        <li ><a href="#mision">Platillos a la carta</a></li>
-                        <li ><a href="#mision">Blog</a></li>
+                        <li><a href="#planes">Planes</a></li>
+                        <li><a href="#consejos">Healthy tips</a></li>
+                        <li><a href="#suscripciones">Suscripciones</a></li>
+                        <li><a href="#carta">Platillos a la Carta</a></li>
+                        <li><a href="#blog">Blog</a></li>
                     </div>
                 </ul>
                 <ul class="footer-navlist-item-list">
                     <div class="footer-navlist-item">
-                        <li ><a href="#mision"> Centro de soporte</a></li>
-                        <li ><a href="#mision">Reglas del blog</a></li>
-                        <li ><a href="#mision">Correo de contacto</a></li>
-                        <li ><a href="#mision">Chat de soporte</a></li>
-                        <li ><a href="#mision">Verificacion nutrii </a></li>
+                        <li><a href="#soporte">Centro de Soporte</a></li>
+                        <li><a href="#reglas">Reglas del Blog</a></li>
+                        <li><a href="#contacto">Correo de Contacto</a></li>
+                        <li><a href="#chat">Chat de Soporte</a></li>
+                        <li><a href="#verificacion">Verificación nutrii </a></li>
                     </div>
                 </ul>
             </div>
         </div>
         <div class="footer-copy">
-            <p>&copy; 2024 NutriiLife |  <a target="_blank" href="#link">Nutriilife Dev Team</a></p>
+            <p>&copy; 2024 NutriiLife |  <a target="_blank" href="#link">NutriiLife Dev Team</a></p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var nombreCompleto = localStorage.getItem('nombre_completo');
+            var planNombre = localStorage.getItem('plan_nombre');
+
+            if (nombreCompleto && planNombre) {
+                document.getElementById('inicioS').style.display = 'none';
+                document.getElementById('inicioU').style.display = 'none';
+                document.getElementById('detallesCuenta').style.display = 'block';
+                document.getElementById('salir').style.display = 'block';
+            }
+        });
+
+        function logout() {
+            localStorage.removeItem('nombre_completo');
+            localStorage.removeItem('plan_nombre');
+            localStorage.removeItem('usuario_id');
+            localStorage.removeItem('usuario');
+            alert('Sesión cerrada con éxito.');
+            window.location.href = 'LandingPage.html';
+        }
+    </script>
 </body>
 </html>
