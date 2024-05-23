@@ -333,8 +333,15 @@ footer{
 }
 .main-titulo{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    color: #002c9b;
-    padding-top: 12vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     text-align: center;
+    font-size: 46px;
+    font-weight: 600;
+    background-image: radial-gradient(circle, #09168a, #049800);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 .platillos {
     font-family: "HelveticaNeue";
