@@ -155,7 +155,8 @@ section {
 }
 
 .story {
-    position: relative;
+    
+    height: 400px;
     border: 1px solid #ddd;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -172,6 +173,7 @@ section {
     width: 100%;
     height: auto;
 }/*eliminar esto*/
+
 @font-face {
     font-family: 'Ubuntu';
     font-style: normal;
@@ -180,17 +182,18 @@ section {
 }
 
 .story .story-title h3 {
-    position: absolute;
+    position: relative;
     font-family: Ubuntu;
     padding-top: 20px;
+    margin-top: 340px;
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: justify;
-    bottom: -18px;
+    bottom: 0;
     text-decoration: solid;
     text-decoration-color: black;
-    width:96%;
+    width: auto;
     width: 1fr;
     border-bottom: 20px;
     font-size: 18px;
