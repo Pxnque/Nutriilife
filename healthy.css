@@ -216,11 +216,16 @@ section {
     align-items: center;
     margin-bottom: 15px;
     font-size: 16px;
+    list-style: none;
+    
 }
-
+.top-stories a{
+    text-decoration: none;
+    color: black;
+}
 .top-stories li img {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     margin-right: 10px;
     border-radius: 5px;
@@ -240,13 +245,19 @@ section {
 
 .news-item img {
     width: 100%;
-    height: auto;
+    height: 236px;
 }
-
+.news-item a{
+    text-decoration: none;
+    color: black;
+}
 .news-item p {
     font-size: 14px;
     margin: 10px 0 0;
+    color: #5f5f5f;
+    font-weight: 100;
 }
+
 
 
 
