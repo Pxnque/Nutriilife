@@ -16,28 +16,42 @@
             </section>
         </div>
         <div class="right">
-            <form action="http://localhost:8081/NutriiLife/PhP/login.php" method="post" class="fields">
+            <form id="loginForm" action="http://localhost:8081/NutriiLife/PhP/login.php" method="post" class="fields">
                 <img src="logo.png" alt="logo-arriba-login" width="150vw" height="150vh">
                 <h1>Log in</h1>
                 <label for="email">Email</label>
-                <input id="email" name="email" type="email">
+                <input id="email" name="email" type="email" required>
                 <label for="password">Contraseña</label>
-                <input id="password" name="password" type="password">
+                <input id="password" name="password" type="password" required>
                 <label class="checkbox-container">
                     <input type="checkbox" name="recordarme">
                     <span class="checkmark"></span>
                     Recordarme
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox" name="terminos">
+                    <input id="terminos" type="checkbox" name="terminos" required>
                     <span class="checkmark"></span>
                     Términos y condiciones
                 </label>
                 <button class="login-button" type="submit">LOG IN</button>
                 <p>¿Todavía no tienes una cuenta? <a href="Registro.html"><strong>Regístrate aquí</strong></a></p>
                 <p><a href="OlvidarContrasena.html"><strong>¿Olvidaste tu contraseña?</strong></a></p>
+                <p><a href="#" onclick="mostrarTerminos()">Ver Términos y condiciones</a></p>
             </form>
         </div>
     </div>
+
+    <script>
+        function mostrarTerminos() {
+            alert("Términos y condiciones:\n\n1. Aceptación de términos.\n2. Uso adecuado de la plataforma.\n3. Protección de datos personales.\n4. Responsabilidades del usuario.\n5. Modificaciones de los términos.");
+        }
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            if (!document.getElementById('terminos').checked) {
+                event.preventDefault();
+                alert('Debes aceptar los términos y condiciones para iniciar sesión.');
+            }
+        });
+    </script>
 </body>
 </html>
