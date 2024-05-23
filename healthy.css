@@ -1,0 +1,340 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0
+}
+.navbar{
+    background-color: #003755;
+    display: flex;
+    width: 95vw;
+    height: 10vh;
+    
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 10px 12px;
+    
+    li{
+        list-style: none;
+        text-align: justify;
+        font-size: 1.7rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(255, 255, 255);
+        justify-content: space-between;
+        text-decoration: none;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #049800;
+    }
+    
+    
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+    /*position: sticky;
+    top: 0;
+    z-index: 999;*/
+}
+.navbar .logo{
+   position: relative;
+   
+
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem
+}
+ #inicioS{
+    background-color: #003755;
+ }
+
+ #inicioS.hover{
+    color: white;
+    transform: scale(2,2);
+ }
+ #inicioU{
+    color: white;
+ }
+ #inicioU.hover{
+    color: white;
+    transform: scale(2,2);
+ }
+.action_btn{
+   
+        float: right; 
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1.5rem;
+        outline: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        
+        cursor: pointer;
+        background: rgb(14, 148, 48);   
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+}
+
+.botones{
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+.logo {
+    font-size: 24px;
+    color: red;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile .live {
+    color: red;
+    margin-right: 10px;
+}
+
+.user-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.stories-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-stories, .top-stories {
+    width: 48%;
+}
+
+.big-stories h2,
+.top-stories h2,
+.latest-news h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.story {
+    position: relative;
+    border: 1px solid #ddd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background:var(--i);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.story:hover{
+    cursor: pointer;
+}
+.story img {
+    width: 100%;
+    height: auto;
+}/*eliminar esto*/
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ubuntu'), url(http://example.com/fonts/ubuntu.woff) format('woff');
+}
+
+.story .story-title h3 {
+    position: absolute;
+    font-family: Ubuntu;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    bottom: -18px;
+    text-decoration: solid;
+    text-decoration-color: black;
+    width:96%;
+    width: 1fr;
+    border-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+}
+.story .story-title:hover{
+    cursor: pointer;
+}
+
+.top-stories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.top-stories li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.top-stories li img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.news-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.news-item p {
+    font-size: 14px;
+    margin: 10px 0 0;
+}
+
+
+
+.footer-contenido{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column-gap: 24px;
+    width: 95vw;
+    padding-top: 12px;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #003755;
+
+}
+.footer-comunidad{
+    display: block;
+}
+.footer-icongroup{
+    display: grid;
+    grid-template-columns: repeat(4,24px);
+    grid-gap: 24px;
+    margin-top: 28px;
+}
+.footer-icongroup a{
+    text-decoration: none;
+    color: white;
+}
+.titulos-footer{
+    color: white;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+}
+footer{
+    background-color: #003755;
+}
+.footer-navlist{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+}
+.footer-navlist-item-list{
+    list-style: none;
+    margin-top: 18px;
+    ul{
+       display: block;
+       margin-block-start: 0cm;
+       margin-block-end: 1cm;
+       padding-inline-start: 40px;
+    }
+}
+.footer-navlist-item li a{
+    
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        color: white;
+        text-decoration: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        padding: 8px;
+        width: max-content;
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+    
+}
+.footer-copy{
+        margin: 50px auto 0;
+        padding: 20px;
+        text-align: center;
+        
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+}
