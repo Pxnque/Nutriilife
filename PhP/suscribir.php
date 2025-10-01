@@ -2,7 +2,7 @@
 session_start();
 
 // Configuración de la conexión a la base de datos
-$host = "localhost";
+$host = "db";
 $port = "5432";
 $dbname = "NutriiLife";
 $user = "postgres";

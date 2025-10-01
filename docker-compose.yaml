@@ -1,0 +1,36 @@
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+      - ftp
+
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: NutriiLife
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 2121
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  ftp:
+    image: fauria/vsftpd
+    environment:
+      FTP_USER: user
+      FTP_PASS: 2121
+      PASV_ADDRESS: 0.0.0.0
+      PASV_MIN_PORT: 21100
+      PASV_MAX_PORT: 21110
+    ports:
+      - "21:21"
+      - "21100-21110:21100-21110"
+    volumes:
+      - ftp_data:/home/user
+
+volumes:
+  db_data:
+  ftp_data:

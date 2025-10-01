@@ -2,11 +2,11 @@
 session_start();
 
 // Configuración de la conexión a la base de datos
-$host = "localhost";
+$host = "db";
 $port = "5432";
 $dbname = "NutriiLife";
 $user = "postgres";
-$password = "1234";
+$password = "2121";
 
 $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
 
@@ -47,10 +47,10 @@ if (pg_num_rows($result) > 0) {
             localStorage.setItem('usuario', '$usuario');
             localStorage.setItem('plan_nombre', '$plan_nombre');
             alert('Login realizado con éxito');
-            window.location.href = '../LandingPage.html';
+            window.location.href = '../index.html';
           </script>";
 } else {
-    echo "<script>alert('Login realizado sin éxito'); window.location.href = '../Login.html';</script>";
+    echo "<script>alert('Login realizado sin éxito'); window.location.href = '../login.html';</script>";
 }
 
 pg_close($conn);
